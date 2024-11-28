@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-21T11:27:13 IST" name="test_suite12" finished-at="2024-10-21T11:27:13 IST" duration-ms="154">
+  <suite started-at="2024-11-13T17:58:50 IST" name="Default suite" finished-at="2024-11-13T17:58:59 IST" duration-ms="8992">
     <groups>
-      <group name="SmokeTest">
-        <method signature="Personal_loan.WebLoginPersonalLoan()[pri:0, instance:practicetestNgConcepts.Personal_loan@58326051]" name="WebLoginPersonalLoan" class="practicetestNgConcepts.Personal_loan"/>
-        <method signature="Home_loan.MobileLoginHomeLoan()[pri:0, instance:practicetestNgConcepts.Home_loan@5e4bd84a]" name="MobileLoginHomeLoan" class="practicetestNgConcepts.Home_loan"/>
-        <method signature="Car_loan.APILoginCarLoan()[pri:0, instance:practicetestNgConcepts.Car_loan@6c0d9d86]" name="APILoginCarLoan" class="practicetestNgConcepts.Car_loan"/>
-      </group> <!-- SmokeTest -->
     </groups>
-    <test started-at="2024-10-21T11:27:13 IST" name="Personal Loan" finished-at="2024-10-21T11:27:13 IST" duration-ms="57">
-      <class name="practicetestNgConcepts.Personal_loan">
-        <test-method signature="WebLoginPersonalLoan()[pri:0, instance:practicetestNgConcepts.Personal_loan@58326051]" started-at="2024-10-21T11:27:13 IST" name="WebLoginPersonalLoan" finished-at="2024-10-21T11:27:13 IST" duration-ms="11" status="PASS">
+    <test started-at="2024-11-13T17:58:50 IST" name="Default test" finished-at="2024-11-13T17:58:59 IST" duration-ms="8992">
+      <class name="exetendreports.ExetendReports">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:exetendreports.ExetendReports@7e4204e2]" started-at="2024-11-13T17:58:50 IST" name="generateReport" finished-at="2024-11-13T17:58:51 IST" duration-ms="211" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WebLoginPersonalLoan -->
-      </class> <!-- practicetestNgConcepts.Personal_loan -->
-    </test> <!-- Personal Loan -->
-    <test started-at="2024-10-21T11:27:13 IST" name="Home Loan" finished-at="2024-10-21T11:27:13 IST" duration-ms="7">
-      <class name="practicetestNgConcepts.Home_loan">
-        <test-method signature="MobileLoginHomeLoan()[pri:0, instance:practicetestNgConcepts.Home_loan@5e4bd84a]" started-at="2024-10-21T11:27:13 IST" name="MobileLoginHomeLoan" finished-at="2024-10-21T11:27:13 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- generateReport -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:exetendreports.ExetendReports@7e4204e2]" started-at="2024-11-13T17:58:51 IST" name="setUp" finished-at="2024-11-13T17:58:55 IST" duration-ms="4590" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MobileLoginHomeLoan -->
-      </class> <!-- practicetestNgConcepts.Home_loan -->
-    </test> <!-- Home Loan -->
-    <test started-at="2024-10-21T11:27:13 IST" name="Car Loan" finished-at="2024-10-21T11:27:13 IST" duration-ms="6">
-      <class name="practicetestNgConcepts.Car_loan">
-        <test-method signature="APILoginCarLoan()[pri:0, instance:practicetestNgConcepts.Car_loan@6c0d9d86]" started-at="2024-10-21T11:27:13 IST" name="APILoginCarLoan" finished-at="2024-10-21T11:27:13 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="FailTest()[pri:0, instance:exetendreports.ExetendReports@7e4204e2]" started-at="2024-11-13T17:58:55 IST" name="FailTest" finished-at="2024-11-13T17:58:55 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- APILoginCarLoan -->
-      </class> <!-- practicetestNgConcepts.Car_loan -->
-    </test> <!-- Car Loan -->
-  </suite> <!-- test_suite12 -->
+        </test-method> <!-- FailTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:exetendreports.ExetendReports@7e4204e2]" started-at="2024-11-13T17:58:55 IST" name="tearDown" finished-at="2024-11-13T17:58:56 IST" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:exetendreports.ExetendReports@7e4204e2]" started-at="2024-11-13T17:58:56 IST" name="setUp" finished-at="2024-11-13T17:58:59 IST" duration-ms="3183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="passTest()[pri:0, instance:exetendreports.ExetendReports@7e4204e2]" started-at="2024-11-13T17:58:59 IST" name="passTest" finished-at="2024-11-13T17:58:59 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:exetendreports.ExetendReports@7e4204e2]" started-at="2024-11-13T17:58:59 IST" name="tearDown" finished-at="2024-11-13T17:58:59 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- exetendreports.ExetendReports -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

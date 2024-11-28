@@ -6,7 +6,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -49,7 +48,7 @@ public class ExetendReports {
 		{
 			logger = reports.startTest("Test Fail");
 			logger.assignAuthor("hari");
-			String Expected ="Gmail";
+			String Expected ="Google";
 			String Actual = driver.getTitle();
 			if(Actual.equalsIgnoreCase(Expected))
 			{

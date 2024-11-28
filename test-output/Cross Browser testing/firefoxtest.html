@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>firefoxtest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 10 11:56:00 IST 2024</td>
+<td>Started on:</td><td>Wed Nov 13 17:56:25 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34074 ms)</td>
+<tr><td>Total time:</td><td>63 seconds (63651 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,65 +76,190 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: test, Qedge123!@#<br/>
-<a href="#Output-508756323" onClick='toggleBox("Output-508756323", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-508756323" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-508756323">
-Invalid credentials   dashboard     http://orangehrm.qedgetech.com/symfony/web/index.php/auth/validateCredentials<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>crossbrowser.CrossBrowser@3e7dd664</td></tr>
+<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: Admin, </td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace636575568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace636575568'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>crossbrowser.CrossBrowser@3549bca9</td></tr>
 <tr>
-<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: Admin, Qedge123!@#<br/>
-<a href="#Output-1934908288" onClick='toggleBox("Output-1934908288", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1934908288" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1934908288">
-Valid username and password:::dashboard       http://orangehrm.qedgetech.com/symfony/web/index.php/dashboard<br/>
-</div>
-</td>
-<td></td>
+<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: Admin, Qedge123!@#</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1303122461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1303122461'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>7</td>
-<td>crossbrowser.CrossBrowser@3e7dd664</td></tr>
+<td>crossbrowser.CrossBrowser@3549bca9</td></tr>
 <tr>
-<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: Admin, Qedge123!@#<br/>
-<a href="#Output-896945135" onClick='toggleBox("Output-896945135", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-896945135" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-896945135">
-Valid username and password:::dashboard       http://orangehrm.qedgetech.com/symfony/web/index.php/dashboard<br/>
-</div>
-</td>
-<td></td>
+<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: test, Qedge123!@#</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace619621481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace619621481'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>5</td>
-<td>crossbrowser.CrossBrowser@3e7dd664</td></tr>
+<td>crossbrowser.CrossBrowser@3549bca9</td></tr>
 <tr>
-<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: , Qedge123!@#<br/>
-<a href="#Output-1446511153" onClick='toggleBox("Output-1446511153", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1446511153" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1446511153">
-Username cannot be empty   dashboard     http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login<br/>
-</div>
-</td>
-<td></td>
+<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: , Qedge123!@#</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace146605930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace146605930'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>5</td>
-<td>crossbrowser.CrossBrowser@3e7dd664</td></tr>
+<td>crossbrowser.CrossBrowser@3549bca9</td></tr>
 <tr>
-<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: Admin, <br/>
-<a href="#Output-1611966906" onClick='toggleBox("Output-1611966906", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1611966906" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1611966906">
-Password cannot be empty   dashboard     http://orangehrm.qedgetech.com/symfony/web/index.php/auth/login<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>crossbrowser.CrossBrowser@3e7dd664</td></tr>
+<td title='crossbrowser.CrossBrowser.veriy_Login()'><b>veriy_Login</b><br>Test class: crossbrowser.CrossBrowser<br>Parameters: Admin, Qedge123!@#</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1874919946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1874919946'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.relevantcodes.extentreports.ExtentTest.log(com.relevantcodes.extentreports.LogStatus, String)&quot; because &quot;this.logger&quot; is null
+	at crossbrowser.CrossBrowser.veriy_Login(CrossBrowser.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>12</td>
+<td>crossbrowser.CrossBrowser@3549bca9</td></tr>
 </table><p>
 </body>
 </html>

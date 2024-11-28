@@ -32,6 +32,12 @@ public class CrossBrowser {
 		
 	}
 	@Test(dataProvider = "dp")
+	
+	//Explanation: The @Test annotation marks this as a test method. 
+	//The dataProvider = "dp" attribute specifies that the test data will be supplied by the dp data provider method. 
+	//The test takes two parameters: user and pass.
+	
+	
 	public void veriy_Login(String user,String pass) throws Throwable {
 		driver.get("http://orangehrm.qedgetech.com/");
 		driver.manage().window().maximize();
@@ -57,6 +63,10 @@ public class CrossBrowser {
 		Object login[][]= {{"Admin","Qedge123!@#"},{"test","Qedge123!@#"},
 				{"Admin",""},{"Admin","Qedge123!@#"},{"","Qedge123!@#"}};
 		return login;
+		
+		/*Explanation: The @DataProvider annotation marks this as a data provider method named dp , 
+		 * 
+		 * which supplies login credentials in a 2D array.*/
 		
 	}
 	@AfterTest

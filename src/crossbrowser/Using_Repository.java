@@ -13,9 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Reporter;
 
-public class Using_dataprovider {
-
-	public class Using_Repository {
+public class Using_Repository {
 	
 		Properties conpro;
 		WebDriver driver;
@@ -79,7 +77,6 @@ public class Using_dataprovider {
 		}
 		}
 
-	}
-	
+		
 
 

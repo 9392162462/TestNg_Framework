@@ -8,6 +8,7 @@
           <include name="beforeTest"/>
           <include name="afterTest"/>
           <include name="veriy_Login"/>
+          <include name="generateReport"/>
         </methods>
       </class> <!-- crossbrowser.CrossBrowser -->
     </classes>
